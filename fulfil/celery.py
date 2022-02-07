@@ -11,3 +11,4 @@ BASE_REDIS_URL = os.environ.get('REDIS_URL', 'redis://localhost:6379')
 app.conf.broker_url = BASE_REDIS_URL
 # creating a celery beat scheduler to start the tasks
 app.conf.beat_scheduler = 'django_celery_beat.schedulers.DatabaseScheduler'
+app.loader.override_backends['django-db'] = 'django_celery_results.backends.database:DatabaseBackend'
