@@ -11,9 +11,11 @@ click-didyoumean==0.3.0
 click-repl==0.2.0
 cloudpickle==2.0.0
 dask==2022.1.1
+dj-database-url==0.5.0
 Django==4.0.2
 django-celery-beat==2.1.0
 django-celery-results==2.0.0
+django-heroku==0.3.1
 django-timezone-field==4.2.3
 djangorestframework==3.13.1
 fsspec==2022.1.0
@@ -27,8 +29,10 @@ numpy==1.22.2
 packaging==21.3
 pandas==1.4.0
 partd==1.2.0
+pkg_resources==0.0.0
 platformdirs==2.4.1
 prompt-toolkit==3.0.27
+psycopg2==2.9.3
 psycopg2-binary==2.9.3
 pycodestyle==2.8.0
 pylint==2.12.2
@@ -44,7 +48,8 @@ six==1.16.0
 sqlparse==0.4.2
 toml==0.10.2
 toolz==0.11.2
-typing-extensions==4.0.1
+typing_extensions==4.0.1
 vine==5.0.0
 wcwidth==0.2.5
+whitenoise==5.3.0
 wrapt==1.13.3
