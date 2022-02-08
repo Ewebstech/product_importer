@@ -9,7 +9,7 @@ from django.utils import timezone
 @app.task(name='tasks.processfile')
 def processfile(fileName):
     start_time = timezone.now()
-    file_path = '../test-data-set.csv'
+    file_path = '/app/test-data-set.csv'
     with open(file_path, "r") as csv_file:
         data = csv.reader(csv_file, delimiter=",")
         products = []
